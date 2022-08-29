@@ -6,40 +6,64 @@ body {
 header {
     background-color: #171b22;
     padding: 20px 0;
+    display:list-item;
 }
 
 .caja {
     width: 940px;
+    height: 100px;
     position: relative;
     margin: 0 auto;
+    display: inline;
 }
 
 .logo-principal {
-    width: auto;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
 }
 
 nav {
-    position: absolute;
-    top: 110px;
-    right: 0px;
+    position:relative;
+    text-align: center;
 }
 
 nav li {
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 20px;
 }
 
 nav a {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
     color: #ffffff;
-    font-size: 10px;
+    font-size: 12px;
+    text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 nav a:hover {
-    color: #c78c19;
-    text-decoration: underline;
+    color: #ffbc2b;
+    transition: 1s all;
+}
+
+.boton-telefono {
+    padding: 6px 6px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #171b22;
+    background-color: #ffbc2b;
+    border: none;
+    border-radius: 35px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.boton-telefono:hover {
+    background-color: #fff0d0;
+    transition: 3s all;
 }
 
 .productos {
@@ -89,7 +113,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    background: url(imagenes/bg.jpg);
+    background-color: #171b22;
     padding: 40px;
     
 }
@@ -171,9 +195,11 @@ td, th {
 }
 
 .titulo-principal {
-    text-align: center;
-    font-size: 2em;
+    text-align: left;
+    color: #171b22;
+    font-size:3em;
     margin: 0 0 1em;
+    white-space: pre;
 }
 
 .principal p {
