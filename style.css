@@ -1,73 +1,6 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-}
-
-header {
-    background-color: #171b22;
-    padding: 20px 0;
-    display:list-item;
-}
-
-.caja {
-    width: 940px;
-    height: 100px;
-    position: relative;
-    margin: 0 auto;
-    display: inline;
-}
-
-.logo-principal {
-    position: relative;
-}
-
-h1 {
-    text-align: center;
-}
-
-nav {
-    position:relative;
-    text-align: center;
-}
-
-nav li {
-    display: inline;
-    margin: 0 0 0 20px;
-}
-
-nav a {
-    color: #ffffff;
-    font-size: 12px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-nav a:hover {
-    color: #ffbc2b;
-    transition: 1s all;
-}
-
-.boton-telefono {
-    padding: 6px 6px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #171b22;
-    background-color: #ffbc2b;
-    border: none;
-    border-radius: 35px;
-    transition: 1s all;
-    cursor: pointer;
-
-}
-
-.boton-telefono:hover {
-    background-color: #fff0d0;
-    transition: 3s all;
-}
 
 .productos {
-    width: 940px;
+    width: auto;
     margin: 0 auto;
     padding: 50px;
 }
@@ -112,6 +45,7 @@ nav a:hover {
 }
 
 footer {
+    width: auto;
     text-align: center;
     background-color: #171b22;
     padding: 40px;
@@ -148,21 +82,23 @@ form label, form legend, form select {
 }
 
 .enviar {
-    width: 40%;
+    width: 20%;
+    position: relative;
+    left: 210px;
     padding: 15px 0;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
-    background-color: orange;
+    background-color: #ffbc2b;
     border: none;
-    border-radius: 10px;
+    border-radius: 35px;
     transition: 1s all;
     cursor: pointer;
 }
 
 .enviar:hover {
     background-color: darkorange;
-    transform: scale(1.2);
+
 }
 
 table {
@@ -183,61 +119,233 @@ td, th {
 
 /*Aquí inicia el CSS para nuestra home*/
 
-.banner {
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0px;
     width: 100%;
+    height: 60px;
+    background-color: rgb(13, 17, 24, 0.9);
+    padding: 15px 0;
+    display:list-item;
+    z-index: 100;
+}
+
+section {
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.home {
+    
+    padding: 120px 0 80px 0;
+    background-color: #fefefe;
+    margin: 0 auto;
+}   
+
+.home ul {
+    width: 900px;
+    height: 210px;
+}
+
+.home p {
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+.home li {
+    display: inline-block;
+}
+
+.titulo-home {
+    width: 420px;
+    height: 112px;
+    text-align: left;
+    line-height: 56px;
+    color: #171b22;
+    font-size:3em;
+    margin: 0 0 0.25em;
+    white-space: pre;
+}
+
+.home p {
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+
+.conteiner {
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.caja {
+    width: auto;
+    height: 60px;
+    position: relative;
+    margin: 0 auto;
+    display: inline;
 }
 
 .principal {
-    padding: 3em 0;
+   display: inline-block;
+   margin: 50px 50px;
+}
+
+h2 {
+    text-align: left;
+}
+
+nav {
+    position:relative;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 30px;
+}
+
+nav img {
+    object-fit: cover;
+    position: relative;
+    bottom: 60px;
+}
+
+nav a {
+    position: relative;
+    bottom: 130px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #ffbc2b;
+    transition: 1s all;
+}
+
+.boton-telefono {
+    position: relative;
+    bottom: 128px;
+    padding: 10px 15px;
+    font-family:'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #171b22;
+    background-color: #ffbc2b;
+    border: none;
+    border-radius: 35px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.boton-telefono:hover {
+    background-color: #ffea2b;
+    transition: 1s all;
+}
+
+
+.principal {
+    display: inline-block;
+    padding: 3em 5em;
     background-color: #fefefe;
     width: 940px;
     margin: 0 auto;
 }
 
-.titulo-principal {
-    text-align: left;
-    color: #171b22;
-    font-size:3em;
-    margin: 0 0 1em;
-    white-space: pre;
+.logo-fondoblanco {
+    display: inline;
+    position: relative;
+    bottom: 165px;
+    left: 550px;
 }
 
-.principal p {
-    margin: 0 0 1em;
+.my-button {
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    width: 80px;
+    height: 80px;
+    z-index: 100;
 }
 
-.principal strong {
-    font-weight: bold;
+.my-button:hover {
+   scale: 120%;
+   transition: 0.5s all;
 }
 
-.principal em {
-    font-style: italic;
-}
-
-.utensillos {
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
+.banner {
+    position: relative;
+    right: 0px;
+    bottom: 300px;
+    width: 1263px;
 }
 
 .mapa {
-    padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888);
+    padding: 5em 0;
+    background-color: #ffffff;
+}
+
+.titulo-mapa {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .mapa p {
-    margin: 0 0 2em;
+    font-size: 1.5em;
+    margin: 0 0 1em;
     text-align: center;
 }
 
 .mapa-contenido {
-    width: 940px;
-    margin: 0 auto;
+    width: auto;
+    margin: 0 0px ;
+}
+
+.contacto {
+    background-color: #ffffff;
+}
+
+.formulario {
+    position: relative;
+    left: 300px;
 }
 
 .diferenciales {
-    background-color: #888888;
+    background-color: #FFFFFF;
     padding: 3em 0;
+}
+
+.titulo-descripcion {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.diferenciales p {
+    text-align: left;
+    font-size: 1.5em;
+    margin: 3em 3em;
 }
 
 .contenido-diferenciales {
@@ -255,19 +363,12 @@ td, th {
     line-height: 1.5;
 }
 
-.items:before {
-    content: "💈"
-}
+
 
 .items:first-child {
     font-weight: bold;
 }
 
-
-.imagen-diferenciales {
-    width: 60%;
-    box-shadow: 10px 10px 30px 15px #000000;
-}
 
 .imagen-diferenciales:hover {
     opacity: 0.3;
