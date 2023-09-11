@@ -156,7 +156,7 @@ logo_fondoblanco {
     padding-top: 7em ;
     padding-bottom: 30em ;
     background-color: #fefefe;
-    margin: 0 auto;
+    margin: auto 0;
     display: inline-block;
 }   
 
@@ -175,6 +175,7 @@ logo_fondoblanco {
 }
 
 .titulo-home {
+    transition:all .5s ease-in-out;
     width: 420px;
     height: 112px;
     text-align: left;
@@ -185,6 +186,31 @@ logo_fondoblanco {
     white-space: pre;
 }
 
+.galeria {
+    padding-top: 80px;
+    display: flex;
+    width: 2000px;
+    height: 600px;
+
+}
+
+.galeria img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.galeria img:hover {
+    cursor: crosshair;
+    width: 500px;
+    opacity: 1;
+    filter: contrast(120%);
+
+
+}
+
 .home p {
     font-size: 1.5em;
     margin: 0 0 1em;
@@ -192,7 +218,17 @@ logo_fondoblanco {
 
 
 .conteiner {
-    width: 150%;
+    width: auto;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner2 {
+    width: auto;
     padding-right: 100px;
     padding-left: 100px;
     display: flex;
@@ -280,7 +316,19 @@ nav a:hover {
 }
 
 .logo-fondoblanco {
+    opacity: 1;
+    transform: translateZ(0);
+    transition-timing-function: ease-in-out;
     padding: 10%;
+    display: inline;
+    position: relative;
+    bottom: auto;
+    left: auto;
+   
+}
+
+.img1 {
+    padding: 0%;
     display: inline;
     position: relative;
     bottom: auto;
