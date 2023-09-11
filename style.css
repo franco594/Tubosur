@@ -2,7 +2,7 @@
 .productos {
     width: auto;
     margin: 0 auto;
-    padding: 50px;
+    padding: 20em 0;
 }
 
 .productos li {
@@ -141,17 +141,23 @@ header {
 }
 
 section {
-    width: 100%;
     position: relative;
     height: auto;
+    width: auto;
     overflow: hidden;
 }
 
-.home {
+logo_fondoblanco {
+    position: relative;
     
-    padding: 120px 0 80px 0;
+}
+
+.home {
+    padding-top: 7em ;
+    padding-bottom: 30em ;
     background-color: #fefefe;
     margin: 0 auto;
+    display: inline-block;
 }   
 
 .home ul {
@@ -186,11 +192,12 @@ section {
 
 
 .conteiner {
-    width: 100%;
+    width: 150%;
     padding-right: 100px;
     padding-left: 100px;
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .caja {
@@ -273,10 +280,12 @@ nav a:hover {
 }
 
 .logo-fondoblanco {
+    padding: 10%;
     display: inline;
     position: relative;
-    bottom: 165px;
-    left: 550px;
+    bottom: auto;
+    left: auto;
+   
 }
 
 .my-button {
@@ -301,7 +310,7 @@ nav a:hover {
 }
 
 .mapa {
-    padding: 5em 0;
+    padding: 20em 0;
     background-color: #ffffff;
 }
 
@@ -324,16 +333,40 @@ nav a:hover {
 
 .contacto {
     background-color: #ffffff;
+    display: block;
+    padding: 20em 0;
 }
 
 .formulario {
     position: relative;
-    left: 300px;
+    margin: auto;
+    
 }
+
+.formulario_1 {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enviar {
+    width: 15%;
+    left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 .diferenciales {
     background-color: #FFFFFF;
-    padding: 3em 0;
+    padding: 20em 0;
 }
 
 .titulo-descripcion {
